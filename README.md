@@ -33,20 +33,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+
     adaptive websites accomadates based on fixed layouts, whereas fully responsive readily changes design regardless of device size.
 
 2. Describe what it means to be mobile first vs desktop first.
+
     "Mobile first" is website build for mobile devices and recoded for desktop user-interface (ie, instagram); quieries are in @media(min-width )
     "Desktop first" is how LambdaSchool has taught their students, @media (max-width), where revisions respond to a reduction of screen size of px.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
     setting html to 62.5% will set all the text at a percentage based on set rem, making all font proportional.
     default rem=16 px.      
 
 4. How would you describe preprocessing to someone new to CSS?
+
     Preprocessing is additional shortcut tags that extend capabilities of CSS and organize it into more neater readable code (so that the coder can focus on more important styling rather than skimming through fonts stylig and colors)
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
     I enjoy the convenience that variables and mixins provide especially for user-interface and mobile compatible websites. 
     What I find difficult is how difficult it is not to overnest, which can create problems with text formatting and other elements. 
 
