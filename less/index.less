@@ -1,5 +1,183 @@
 // Import your less files here:
 
+// Variables
+
+// Color pointers
+@nav-bg: @wild-sand;
+@nav-font: @river-bend;
+@nav-border: @sea-shell;
+
+@header-font-color: @ebony-clay;
+@main-font-color: @shuttle-gray;
+@main-border-color: @border-real;
+
+@footer-background: @wild-sand;
+@footer-font-color: @waterloo;
+
+// Color Vars
+@wild-sand: #F6F6F6;
+@river-bend: #454A59;
+@sea-shell: #F1F1F1;
+@ebony-clay: #23293B;
+@shuttle-gray: #5E6164;
+@porcelain: #F6F7F8;
+@waterloo: #81848E;
+@btn-bg-color: #22283A;
+@border-real: #dee2e6;
+
+// Mobile var
+
+@mobile-bg: @wild-sand;
+@mobile-font: @river-bend;
+@mobile-border: @sea-shell;
+
+@header-font-color: @ebony-clay;
+@mobile-font-color: @shuttle-gray;
+@mobile-border-color: @border-real;
+
+
+
+
+
+
+
+
+
+// Mixins Here
+.center() {
+    display:flex;
+    justify-content: center;
+}
+.padding() {
+    padding: 1.5rem 0 1rem;
+}
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+// General Styles
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  html, body {
+    font-family: 'Ubuntu', sans-serif;
+    color: @main-font-color;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Russo One', sans-serif;
+    color: @header-font-color;
+  }
+
+
+  h2 {
+    font-size: 3.2rem;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  
+  .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;  
+  }
+  
+  
+
+// Navigation code here
+// div, p, footer, h1, h3, a, nav, header{
+//     border:solid black 2px;
+//   }
+
+  
+.header {
+    display: flex;
+    flex-direction:column;
+    .padding();
+    align-items: center;
+    }
+    h1 {
+         font-size: 5.5rem;
+        .center();
+        }
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        width:50%;
+        .padding();
+
+        a {
+            color:black;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+    }
 
 
 
@@ -10,3 +188,180 @@
 
 
 
+
+
+
+
+
+
+// Footer Styles
+footer {
+    color: #22283B;
+    background: #f4f4f4;
+    padding: 20px 0;
+    border: 1px double #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+
+
+// Home Content
+
+.home {
+
+    .intro {
+  
+      h2 {
+        padding: 15px;
+      }
+  
+      p {
+        padding:0 15px;
+      }
+    
+    }
+  
+    .space-images {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+  
+      img {
+        width: 28%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+      }
+    }
+  
+    .visit-planets {
+      padding: 15px;
+  
+      h3 {
+        margin-top: 11px;
+      }
+  
+      p {
+        margin-top: 13px;
+      }
+    }
+  
+    .walk {
+      margin-top: 60px;
+      border-top: 1px solid @main-border-color;
+      padding: 50px 60px;
+      display: flex;
+      justify-content: center;
+  
+      .walk-text {
+        width: 50%;
+  
+        h3 {
+          margin-bottom: 10px;
+        }
+  
+        p {
+          margin-bottom: 26px;
+        }
+    } }
+    
+  
+      .walk-img {
+        width: 46%;
+        margin-left: 4%;
+        
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+    }
+    .btn {
+        border-radius: 6px;
+        .padding();
+        width: 40%;
+        background-color:@header-font-color;
+        color: white;
+        font-size: 2rem;
+        .center;
+        &:hover{
+            background-color: white;
+            color: @nav-font;
+            border: 2px solid @nav-font;
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* //Mobile View// */
+@media (max-width:500px) {
+    .container {
+              width: 100%;
+      }  
+
+    .header, .nav, .logo, .brand, .mobile-change .footer {
+          flex-direction: column;
+          align-content: center;
+          nav {
+              width: 90%;
+              a {
+              font-size: 1.5rem;
+          }}
+      }
+
+    .blast {
+        width: 100%;
+    }
+    .sky, .launch {
+      visibility: hidden;
+      height:0px;
+    }
+    .walk {
+        display:flex;
+        flex-direction: column;
+        width: ;
+    }
+    .walk-img {
+        display: flex;
+        order: -1;
+    }
+    
+
+
+
+  
+    .btn {
+        border-radius: 6px;
+        width: 100%;
+        background-color:@header-font-color;
+        color: white;
+        font-size: 2rem;
+    }
+
+
+
+  }
